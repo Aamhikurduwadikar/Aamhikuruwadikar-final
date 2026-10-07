@@ -2,3 +2,47 @@
 .login-top{border:1px solid #1265d9;background:#1265d9;color:#fff;border-radius:12px;padding:9px 14px;font-weight:800}.auth-overlay{position:fixed;inset:0;z-index:50;max-width:none;background:#0006;overflow:auto}.auth-overlay section{max-width:480px;margin:35px auto;position:relative}.close-auth{position:absolute;right:15px;top:15px;border:0;background:#edf5ff;color:#1265d9;border-radius:50%;width:34px;height:34px;font-weight:800}.logo-fallback{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#a52a20;color:#fff;font-weight:900;font-size:10px;flex:none}.brand-large .logo-fallback{width:96px;height:96px;font-size:22px;margin-bottom:5px}.login-required{margin:30px 16px;padding:28px 20px;border-radius:22px;background:#f5f9ff;text-align:center}.login-required p{color:#718096;line-height:1.6}.quiz-card{margin:12px 16px;padding:18px;border:1px solid #e2eaf3;border-radius:20px;background:#fff;box-shadow:0 8px 20px #174b800b}.quiz-card>span{font-size:12px;color:#1265d9;font-weight:800}.quiz-card h3{font-size:18px;line-height:1.5}.quiz-option,.correct{display:block;width:100%;padding:12px;margin:8px 0;text-align:left;border:1px solid #dfe7f0;border-radius:12px;background:#fff}.correct{background:#eaf9f0;border-color:#70c995;color:#166b40;font-weight:800}.quiz-score{color:#167448;font-weight:800}.upload-box{margin:12px 16px;padding:24px 16px;border:2px dashed #9bc5f5;border-radius:20px;background:#f5faff;text-align:center;display:flex;flex-direction:column;gap:7px;color:#1265d9;cursor:pointer}.upload-box input{display:none}.upload-box span{font-size:34px}.upload-box small{color:#7b8798}.note-list{padding-bottom:20px}.note-actions{display:flex;gap:8px;margin-top:12px}.note-actions button{flex:1}.small-btn{padding:10px!important;font-size:12px}
 .menu-backdrop{position:fixed;inset:0;background:#0006;z-index:20}.sidebar{position:fixed;left:0;top:0;bottom:0;width:min(330px,82vw);background:#fff;z-index:30;padding:18px 14px;box-shadow:12px 0 35px #0002;animation:slideIn .22s ease-out}.sidebar-head{display:flex;align-items:center;justify-content:space-between;padding:0 3px 18px;border-bottom:1px solid #edf1f6}.close-menu{border:0;background:#edf5ff;color:#1265d9;width:36px;height:36px;border-radius:12px;font-size:18px}.menu-user{margin:16px 3px;padding:13px;border-radius:15px;background:#f4f8fd;font-size:13px;word-break:break-all}.menu-user small{display:block;color:#7c899b;margin-top:4px;font-size:11px}.menu-item{width:100%;display:flex;align-items:center;gap:13px;border:0;background:#fff;padding:14px 13px;border-radius:13px;text-align:left;font-size:15px;font-weight:700;color:#334155;margin:2px 0}.menu-item span{font-size:21px;width:28px;text-align:center}.active-menu{background:#edf6ff!important;color:#0b70e6!important}.menu-line{height:1px;background:#edf1f6;margin:12px 4px}@keyframes slideIn{from{transform:translateX(-100%)}to{transform:translateX(0)}}
 .tracker-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 16px}.tracker-summary>div{padding:12px 6px;text-align:center;border:1px solid #e4ebf4;border-radius:14px;background:#fff}.tracker-summary b{display:block;font-size:20px;color:#0b70e6}.tracker-summary small{font-size:10px;color:#7c899b}.tracker-progress{margin:8px 16px 15px;padding:14px;border-radius:16px;background:#f5f9ff}.tracker-progress>div:first-child{display:flex;justify-content:space-between;font-size:13px}.tracker-progress span{color:#0b70e6;font-weight:800}.syllabus-list{display:grid;gap:10px;padding:0 16px 20px}.syllabus-card{border:1px solid #e1e8f1;border-radius:18px;background:#fff;padding:13px;box-shadow:0 5px 15px #174b8008}.syllabus-head{display:flex;align-items:center;gap:10px}.syllabus-head>span{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#edf6ff;font-size:22px}.syllabus-head div{flex:1}.syllabus-head b,.syllabus-head small{display:block}.syllabus-head small{font-size:10px;color:#7b8798;margin-top:3px}.syllabus-head strong{font-size:13px;color:#0b70e6}.mini-progress{height:6px;background:#e8eef6;border-radius:8px;overflow:hidden;margin:10px 0}.mini-progress i{display:block;height:100%;background:#1688ef;border-radius:8px}.syllabus-topics{display:grid;gap:6px}.syllabus-topics button{display:flex;align-items:center;gap:8px;width:100%;padding:10px;border:1px solid #e5ebf2;border-radius:10px;background:#fff;text-align:left;font-size:12px;color:#344155}.syllabus-topics button span{flex:none}.syllabus-topics button em{margin-left:auto;font-style:normal;font-size:9px;color:#8a96a5}.syllabus-topics .done{background:#eaf9f0;border-color:#9bd8b5;color:#176e42}.syllabus-topics .done em{color:#16834b;font-weight:700}
+
+/* Final mobile layout polish */
+html,body,#root{min-height:100%;overflow-x:hidden}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+.app{overflow-x:hidden}
+main{min-height:calc(100vh - 68px);overflow-x:hidden}
+.page-head{min-height:64px}
+.search{border:1px solid #e3eaf3;align-items:center}
+.tracker-summary{margin-top:6px}
+.tracker-summary>div{min-width:0}
+.tracker-summary b{line-height:1.15}
+.tracker-progress{margin-top:10px}
+.syllabus-list{gap:12px}
+.syllabus-card{overflow:hidden}
+.syllabus-head strong{white-space:nowrap}
+.syllabus-topics button{min-height:42px;line-height:1.35}
+.syllabus-topics button span{font-size:15px}
+.syllabus-topics button em{white-space:nowrap}
+@media(max-width:480px){
+  .app{width:100%;max-width:480px}
+  header{height:72px;padding:0 12px}
+  .brand{gap:8px}
+  .mpsc-logo,.logo-fallback{width:40px;height:40px}
+  .brand b{font-size:20px}
+  .page-head{padding:14px 14px 7px}
+  .tracker-summary{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-left:12px;margin-right:12px}
+  .tracker-summary>div{padding:10px 3px}
+  .tracker-summary b{font-size:18px}
+  .tracker-summary small{font-size:9px}
+  .tracker-progress{margin-left:12px;margin-right:12px}
+  .syllabus-list{padding-left:12px;padding-right:12px}
+  .syllabus-card{padding:11px}
+  .syllabus-head>span{width:40px;height:40px}
+  .syllabus-head b{font-size:15px}
+  .syllabus-head small{font-size:10px}
+  .syllabus-topics button{font-size:12px;padding:9px}
+}
+@media(max-width:360px){
+  .brand b{font-size:18px}
+  .login-top{padding:8px 11px}
+  .syllabus-topics button{font-size:11px}
+}
