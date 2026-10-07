@@ -46,3 +46,14 @@ main{min-height:calc(100vh - 68px);overflow-x:hidden}
   .login-top{padding:8px 11px}
   .syllabus-topics button{font-size:11px}
 }
+
+.pyq-note{margin:8px 16px 12px;padding:13px 14px;border-radius:15px;background:#f5f9ff;color:#52657d;font-size:12px;line-height:1.55;border:1px solid #e2ebf6}
+.pyq-list{display:grid;gap:10px;padding:0 16px 22px}
+.pyq-card{margin:0;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px;border:1px solid #e2e9f2;border-radius:17px;background:#fff;box-shadow:0 5px 15px #174b8008}
+.pyq-card>div{display:flex;align-items:center;gap:10px;min-width:0}
+.pyq-card>div>span{width:43px;height:43px;border-radius:13px;background:#edf6ff;display:grid;place-items:center;font-size:22px;flex:none}
+.pyq-card b,.pyq-card small{display:block}
+.pyq-card b{font-size:13px}
+.pyq-card small{font-size:10px;color:#7b8798;margin-top:3px}
+.pyq-card button{width:auto;min-width:88px;padding:10px 9px!important;white-space:nowrap}
+@media(max-width:360px){.pyq-card{align-items:flex-start;flex-direction:column}.pyq-card button{width:100%}}
