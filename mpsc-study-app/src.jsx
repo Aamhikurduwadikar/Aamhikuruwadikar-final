@@ -9,7 +9,7 @@ const db=createClient(SUPABASE_URL,SUPABASE_KEY);
 
 const subjects=[['📖','इतिहास','इतिहास व आधुनिक भारत'],['🏛️','राज्यशास्त्र','घटना, शासनव्यवस्था'],['🌍','भूगोल','भारत व महाराष्ट्र भूगोल'],['📈','अर्थशास्त्र','संकल्पना व नोट्स'],['🔬','विज्ञान','महत्त्वाचे मुद्दे'],['🌱','पर्यावरण','पर्यावरण व शाश्वत विकास'],['⚖️','महाराष्ट्र विशेष','महाराष्ट्र सामान्य ज्ञान'],['📰','चालू घडामोडी','राष्ट्रीय व आंतरराष्ट्रीय']];
 const topics=subjects.map(x=>x[1]).flatMap(s=>[1,2,3].map(i=>({subject:s,topic:s+' — Topic '+i})));
-const tiles=[['📚','Notes','अभ्यास साहित्य','Study'],['📄','PYQ','मागील प्रश्नपत्रिका','Study'],['📊','Portion','अभ्यास नियोजन','Study'],['🎯','Practice','सराव प्रश्न','Practice'],['👥','Student Group','विद्यार्थी चर्चा','Group'],['📰','Updates','चालू घडामोडी','Practice']];
+const tiles=[['📚','Notes','माझे PDF Notes','Notes'],['📄','PYQ','मागील प्रश्नपत्रिका','Study'],['📊','Portion','अभ्यास नियोजन','Study'],['🎯','Practice','सराव प्रश्न','Practice'],['👥','Student Group','विद्यार्थी चर्चा','Group'],['📰','Updates','चालू घडामोडी','Practice']];
 const quiz=[['भारतीय संविधानाचे शिल्पकार म्हणून कोणाला ओळखले जाते?',['डॉ. बाबासाहेब आंबेडकर','महात्मा गांधी','लोकमान्य टिळक','पंडित नेहरू'],0],['महाराष्ट्राची राजधानी कोणती?',['मुंबई','पुणे','नागपूर','नाशिक'],0],['भारताचे राष्ट्रीय फूल कोणते?',['कमळ','गुलाब','जाई','चाफा'],0]];
 
 function Logo({large=false}){const[f,setF]=useState(false);return <div className={'brand '+(large?'brand-large':'')}>{f?<div className="logo-fallback">MPSC</div>:<img className="mpsc-logo" src="/logo.svg" alt="MPSC logo" onError={()=>setF(true)}/>}<div><b>MPSC <em>Study</em></b>{large&&<small>स्पर्धा परीक्षेची स्मार्ट तयारी</small>}</div></div>}
