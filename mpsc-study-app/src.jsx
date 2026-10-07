@@ -23,7 +23,16 @@ const syllabus=[
 ];
 const topics=syllabus.flatMap(s=>s.topics.map(topic=>({subject:s.name,topic})));
 const pyq=[['2025','पूर्व परीक्षा','MPSC Group C 2025'],['2024','पूर्व परीक्षा','MPSC Group C 2024'],['2023','पूर्व + मुख्य','MPSC Group C 2023'],['2022','पूर्व + मुख्य','MPSC Group C 2022'],['2021','पूर्व + मुख्य','MPSC Group C 2021'],['2020','पूर्व परीक्षा','MPSC Group C 2020'],['2019','पूर्व परीक्षा','MPSC Group C 2019'],['2018','पूर्व परीक्षा','MPSC Group C 2018']];
-const pyqSources={2025:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/',2024:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/',2023:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/',2022:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/',2021:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/',2020:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/',2019:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/',2018:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/'};
+const pyqSources={
+2025:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/',
+2024:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/',
+2023:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/',
+2022:'https://www.adda247.com/jobs/wp-content/uploads/sites/11/2022/11/05134803/MPSC-Group-C-Combine-Paper-2022.pdf',
+2021:'https://www.adda247.com/jobs/wp-content/uploads/sites/11/2022/07/24100332/MPSC-Group-C-Combine-Prelims-Exam-2021-Question-Paper-1.pdf',
+2020:'https://mpscpoint.in/mpsc-combine-group-c-previous-year-papers-pdf/',
+2019:'https://www.adda247.com/jobs/wp-content/uploads/sites/11/2021/10/18105119/MPSC-Group-C-Combine-Prelims-Exam-2019-Question-Paper-1.pdf',
+2018:'https://www.adda247.com/jobs/wp-content/uploads/sites/11/2021/10/16154634/MPSC-Group-C-Combine-Prelims-Exam-2018-Question-Paper.pdf'
+}
 const tiles=[['📚','Notes','माझे PDF Notes','Notes'],['📄','PYQ','मागील प्रश्नपत्रिका','PYQ'],['📊','Portion','अभ्यास नियोजन','Study'],['🎯','Practice','सराव प्रश्न','Practice'],['👥','Student Group','विद्यार्थी चर्चा','Group'],['📰','Updates','चालू घडामोडी','Practice']];
 const quiz=[['भारतीय संविधानाचे शिल्पकार म्हणून कोणाला ओळखले जाते?',['डॉ. बाबासाहेब आंबेडकर','महात्मा गांधी','लोकमान्य टिळक','पंडित नेहरू'],0],['महाराष्ट्राची राजधानी कोणती?',['मुंबई','पुणे','नागपूर','नाशिक'],0],['भारताचे राष्ट्रीय फूल कोणते?',['कमळ','गुलाब','जाई','चाफा'],0]];
 
